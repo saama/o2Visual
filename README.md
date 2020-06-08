@@ -1,6 +1,3 @@
-#o2Visual 
-#version 1.0.0 beta
-
 # o2Visual
 > o2 visualization을 줄인 o2Visual
 
