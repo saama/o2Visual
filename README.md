@@ -8,7 +8,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-지도위에 다양한 데이터를 보다 쉽게 시각화 하여 개발할 수 있게 하기 위해 만들어진 프로젝트입니다.
+지도위에 보다 쉽게 데이터를 시각화 할 수 있게 도와줍니다.
 
 ![](../header.png)
 
