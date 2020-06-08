@@ -25,8 +25,18 @@ edit autoexec.bat
 
 ## 사용 예제
 
-스크린 샷과 코드 예제를 통해 사용 방법을 자세히 설명합니다.
+header_inc.jsp에 아래 추가
+``
+<%
+	long VERSION = System.currentTimeMillis();
+%>
 
+<%-- ==================================================================================== --%>
+<%-- = o2.visual--%>
+<%-- ==================================================================================== --%>
+<script src="${CONTEXTPATH}/o2Visual/source/o2visual-package.js?v=<%=VERSION%>"></script>
+<script src="${CONTEXTPATH}/o2Visual/source/o2visual-loader.js?v=<%=VERSION%>"></script>
+``
 _더 많은 예제와 사용법은 [Wiki][wiki]를 참고하세요._
 
 ## 개발 환경 설정
