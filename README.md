@@ -26,7 +26,7 @@ edit autoexec.bat
 ## 사용 예제
 
 header_inc.jsp에 아래 추가
-``
+```sh
 <%
 	long VERSION = System.currentTimeMillis();
 %>
@@ -36,7 +36,7 @@ header_inc.jsp에 아래 추가
 <%-- ==================================================================================== --%>
 <script src="${CONTEXTPATH}/o2Visual/source/o2visual-package.js?v=<%=VERSION%>"></script>
 <script src="${CONTEXTPATH}/o2Visual/source/o2visual-loader.js?v=<%=VERSION%>"></script>
-``
+```
 _더 많은 예제와 사용법은 [Wiki][wiki]를 참고하세요._
 
 ## 개발 환경 설정
