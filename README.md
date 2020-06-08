@@ -1,14 +1,14 @@
 #o2Visual 
 #version 1.0.0 beta
 
-# 프로젝트명
+# o2Visual
 > o2 visualization을 줄인 o2Visual
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-한 두 문단으로 프로젝트 소개 글을 작성합니다.
+지도위에 다양한 데이터를 보다 쉽게 시각화 하여 개발할 수 있게 하기 위해 만들어진 프로젝트입니다.
 
 ![](../header.png)
 
@@ -43,17 +43,7 @@ npm test
 
 ## 업데이트 내역
 
-* 0.2.1
-    * 수정: 문서 업데이트 (모듈 코드 동일)
-* 0.2.0
-    * 수정: `setDefaultXYZ()` 메서드 제거
-    * 추가: `init()` 메서드 추가
-* 0.1.1
-    * 버그 수정: `baz()` 메서드 호출 시 부팅되지 않는 현상 (@컨트리뷰터 감사합니다!)
-* 0.1.0
-    * 첫 출시
-    * 수정: `foo()` 메서드 네이밍을 `bar()`로 수정
-* 0.0.1
+* 1.0.0
     * 작업 진행 중
 
 ## 정보
