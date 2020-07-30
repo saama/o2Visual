@@ -10,7 +10,7 @@ var VisualLibFiles = {
 		   "o2Visual/utils/sample1.js",
 		   "o2Visual/utils/sample2.js",
 		   "o2Visual/utils/sample3.js",
-		   "o2Visual/core/map.js",
+		   "o2Visual/core/pane.js",
 		]
 	},
 	
