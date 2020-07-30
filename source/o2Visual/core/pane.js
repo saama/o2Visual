@@ -56,12 +56,6 @@
 					.append("g")
 					.attr("id","circleGrp")
 
-				d3.select("#circleGrp").append("rect")
-					.attr("x",600)
-					.attr("y",500)
-					.attr("width",50)
-					.attr("height",50)
-
 				//d3 라벨이 만들어질시 화면 픽셀 초기화
 				init00 = map.getPixelFromCoordinate(ol.proj.fromLonLat([0, 0]));
 				init11 = map.getPixelFromCoordinate(ol.proj.fromLonLat([1, 1]));
@@ -96,10 +90,11 @@
 						.append("g")
 						.attr("id","circleGrp")
 					d3.select("#circleGrp").attr("transorm","translate(0,0)");
-
+					// ol.proj.transform(d.geometry.coordinates[0], 'EPSG:5179','EPSG:3857');
+					var p = map.getPixelFromCoordinate(ol.proj.fromLonLat([127.0709103,37.4003657]));
 					d3.select("#circleGrp").append("rect")
-						.attr("x",600)
-						.attr("y",500)
+						.attr("x",p[0])
+						.attr("y",p[1])
 						.attr("width",50)
 						.attr("height",50)
 				});
