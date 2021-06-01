@@ -14,7 +14,7 @@
 
         initPane : function(){
             var _self = this;
-            _self.map=policeMain._panel.Map.map;
+            _self.map=o2Visual._panel.Map.map;
             var canvas = d3.select('#map .ol-viewport')
                 .insert('div').classed('d3-layer', true) //div before gui for gui to work
                 .style('position', 'absolute')
@@ -76,15 +76,15 @@
         },
 
         render : function(){
-            policeMain.core.pane.curr00 = policeMain.core.pane.map.getPixelFromCoordinate(ol.proj.fromLonLat([0, 0]));
-            policeMain.core.pane.curr11 = policeMain.core.pane.map.getPixelFromCoordinate(ol.proj.fromLonLat([1, 1]));
-            policeMain.core.pane.currScale = [policeMain.core.pane.curr11[0]-policeMain.core.pane.curr00[0], policeMain.core.pane.curr11[1]-policeMain.core.pane.curr00[1]];
-            policeMain.core.pane.rescale = [policeMain.core.pane.currScale[0]/policeMain.core.pane.initScale[0], policeMain.core.pane.currScale[1]/policeMain.core.pane.initScale[1]];
-            policeMain.core.pane.retranslate = [policeMain.core.pane.curr00[0]-policeMain.core.pane.init00[0]*policeMain.core.pane.rescale[0], policeMain.core.pane.curr00[1]-policeMain.core.pane.init00[1]*policeMain.core.pane.rescale[1]];
-            d3.select("#circleGrp").attr("transform","translate("+policeMain.core.pane.retranslate[0]+","+policeMain.core.pane.retranslate[1]+")");
+            o2Visual.core.pane.curr00 = o2Visual.core.pane.map.getPixelFromCoordinate(ol.proj.fromLonLat([0, 0]));
+            o2Visual.core.pane.curr11 = o2Visual.core.pane.map.getPixelFromCoordinate(ol.proj.fromLonLat([1, 1]));
+            o2Visual.core.pane.currScale = [o2Visual.core.pane.curr11[0]-o2Visual.core.pane.curr00[0], o2Visual.core.pane.curr11[1]-o2Visual.core.pane.curr00[1]];
+            o2Visual.core.pane.rescale = [o2Visual.core.pane.currScale[0]/o2Visual.core.pane.initScale[0], o2Visual.core.pane.currScale[1]/o2Visual.core.pane.initScale[1]];
+            o2Visual.core.pane.retranslate = [o2Visual.core.pane.curr00[0]-o2Visual.core.pane.init00[0]*o2Visual.core.pane.rescale[0], o2Visual.core.pane.curr00[1]-o2Visual.core.pane.init00[1]*o2Visual.core.pane.rescale[1]];
+            d3.select("#circleGrp").attr("transform","translate("+o2Visual.core.pane.retranslate[0]+","+o2Visual.core.pane.retranslate[1]+")");
         },
     }
-    policeMain.core = $.extend(policeMain.core || {}, {
+    o2Visual.core = $.extend(o2Visual.core || {}, {
         pane : _class
     });
 })();
